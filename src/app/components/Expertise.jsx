@@ -9,7 +9,7 @@ const Expertise = () => {
         <div className="lg:w-[70%] gap-4">
           <div className="flex justify-between w-full">
             <h4 className='lg:w-[20%]'></h4>
-            <p className="lg:w-[80%]">Our clients range from startups to medium-sized businesses, demonstrating the versatility of our solutions. We adapt to organizations of varying sizes, providing tailored strategies for success. No matter your company's stage of growth, we have the expertise to help you reach your goals.</p>
+            <p className="lg:w-[80%]">Our clients range from startups to medium-sized businesses, demonstrating the versatility of our solutions. We adapt to organizations of varying sizes, providing tailored strategies for success. No matter your company{"'"}s stage of growth, we have the expertise to help you reach your goals.</p>
           </div>
         </div>
       </div>
