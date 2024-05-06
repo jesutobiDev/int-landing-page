@@ -19,7 +19,7 @@ const Homepage = () => {
 
 
   return (
-    <div className='w-full min-h-[500px] bg-homepageBackground bg-cover p-7 lg:px-20 lg:py-10 relative'>
+    <div className='h-[810px] w-[1440px] bg-homepageBackground bg-cover p-7 lg:px-20 lg:py-10 relative'>
       <nav className='flex justify-between items-center mb-16'>
         <div className='flex gap-1 items-center'>
           <div
