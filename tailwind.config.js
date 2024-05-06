@@ -12,6 +12,7 @@ module.exports = {
         "solutionsBackground" : "url('/solutions.svg')",
         "contactpromoBackground" : "url('/contactpromo.svg')",
         "industriesBackground" : "url('/industries.svg')",
+        "Background404" : "url('/404.svg')",
       },
       fontFamily:{
         calistoga : ['var(--font-calistoga)']
