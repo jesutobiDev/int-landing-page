@@ -53,7 +53,7 @@ const Homepage = () => {
         />
       </nav>
       <div className='w-full h-auto flex flex-col gap-10'>
-        <h1 className='text-white text-3xl lg:text-5xl font-medium w-[40%] tracking-wider leading-tight'>Implementing Software Solutions</h1>
+        <h1 className='text-white text-4xl lg:text-5xl font-medium w-[40%] tracking-wider leading-tight'>Implementing Software Solutions</h1>
         <div className='flex flex-col gap-4'>
           <p className="text-white text-base font-light tracking-wider">Innovating Tomorrow{'\''}s Solutions, Today.</p>
           <div className="flex gap-2 items-center">

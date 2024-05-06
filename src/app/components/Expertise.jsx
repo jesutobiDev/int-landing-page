@@ -16,42 +16,36 @@ const Expertise = () => {
       <div className='h-[2px] bg-white w-full mb-10'></div>
       <div className='flex justify-around mb-7 gap-7 flex-wrap'>
         <Image
-          className="flex self-end"
           src="/blitz.svg"
           alt=''
           width={50}
           height={50}
         />
         <Image
-          className="flex self-end"
           src="/storefront.svg"
           alt=''
           width={200}
           height={50}
         />
         <Image
-          className="flex self-end"
           src="/cashbridge.svg"
           alt=''
           width={50}
           height={100}
         />
         <Image
-          className="flex self-end"
           src="/waitr.svg"
           alt=''
           width={100}
           height={50}
         />
         <Image
-          className="flex self-end"
           src="/qpay.svg"
           alt=''
           width={50}
           height={50}
         />
         <Image
-          className="flex self-end"
           src="/spaces.svg"
           alt=''
           width={50}
