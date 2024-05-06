@@ -8,11 +8,18 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "homepageBackground" : "url('/homepage-background.svg')",
+        "solutionsBackground" : "url('/solutions.svg')",
+        "contactpromoBackground" : "url('/contactpromo.svg')",
+        "industriesBackground" : "url('/industries.svg')",
       },
+      fontFamily:{
+        calistoga : ['var(--font-calistoga)']
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+    // other plugins
+],
 };
