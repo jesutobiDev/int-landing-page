@@ -74,7 +74,7 @@ const Homepage = () => {
         </a>
       </div>
 
-      <div className={`${navClicked ? 'hidden' : ''} bg-white h-screen absolute top-0 right-0 w-screen lg:hidden`}>
+      <div className={`${navClicked ? 'hidden' : ''} bg-white h-screen absolute top-0 right-0 w-screen hidden lg:hidden`}>
         <div className='flex w-full justify-end mb-20 pt-7 pr-7'>
           <Image
             className="lg:hidden"
