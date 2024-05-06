@@ -14,7 +14,7 @@ const Expertise = () => {
         </div>
       </div>
       <div className='h-[2px] bg-white w-full mb-10'></div>
-      <div className='flex justify-around mb-7 gap-7 flex-wrap'>
+      <div className='flex justify-between lg:justify-around mb-7 gap-7 flex-wrap'>
         <Image
           src="/blitz.svg"
           alt=''
