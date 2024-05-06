@@ -6,7 +6,7 @@ const Milestones = () => {
       <h1  className='text-3xl text-[#000000] mb-3 lg:w-[30%]'>Milestones</h1>
       <div className='h-[2px] bg-[#00000040] w-full mb-3'></div>
       <p className='lg:w-1/2'>Explore int+ journey, defined by transformative milestones, showcasing our unwavering commitment to excellence and innovation.</p>
-      <div className='flex justify-between'>
+      <div className='flex justify-between flex-wrap'>
         <div className='flex flex-col gap-3 items-center p-2  w-[200px] lg:justify-center text-center'>
           <p className='text-base'>Projects</p>
           <p className='text-2xl font-semibold'>+23</p>
