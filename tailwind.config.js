@@ -18,16 +18,12 @@ module.exports = {
         calistoga: ['var(--font-calistoga)']
       },
       animation: {
-        'waves': 'waves 2s linear infinite',
+        'move-bg': 'move-bg 3s linear infinite',
       },
       keyframes: {
-        'waves': {
-          '0%': {
-            transform: 'rotate(0deg) translate(-165px) rotate(0deg)',
-          },
-          '100%': {
-            transform: 'rotate(360deg) translate(-165px) rotate(-360deg)',
-          },
+        'move-bg': {
+          'from': { 'background-position': '0 0' },
+          'to': { 'background-position': '200% 0%' },
         }
       }, // Add a comma here
     }, // Close extend object

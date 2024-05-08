@@ -17,7 +17,7 @@ const Solutions = () => {
           />
         </div>
 
-        <span className=" transition-all duration-300 ease-in-out hidden group-hover:flex leading-[70px]">Tell us about your project</span>
+                <span className=" transition-all duration-300 ease-in-out hidden group-hover:flex leading-[70px]">Tell us about your project</span>
 
       </a>
     </div>
