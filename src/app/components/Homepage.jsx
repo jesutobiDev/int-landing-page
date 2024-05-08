@@ -63,7 +63,7 @@ const Homepage = () => {
             <p className='text-white text-lg font-light tracking-wide'>– Your Trusted IT Partner</p>
           </div>
         </div>
-        <a href='#contact' className='flex w-fit px-4 py-2 rounded-full bg-opacity-5 bg-white backdrop-filter backdrop-blur-lg border border-opacity-10 border-white border-solid shadow-md text-white gap-4'>
+        <a href='#contact' className='flex w-fit px-4 py-2 rounded-full bg-opacity-5 bg-white backdrop-filter backdrop-blur-lg border border-opacity-10 border-white border-solid shadow-md text-white gap-4 outline-none group relative'>
           <p className='text-lg font-light'>Get Started</p>
           <Image
             src="/arrow.svg"
@@ -71,6 +71,7 @@ const Homepage = () => {
             width={25}
             height={15}
           />
+          {/* <div class="absolute -inset-0.5 bg-white rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 "></div> */}
         </a>
       </div>
 

@@ -22,8 +22,12 @@ module.exports = {
       },
       keyframes: {
         'waves': {
-          '0%': { backgroundPositionX: '0' },
-          '100%': { backgroundPositionX: '1000px' },
+          '0%': {
+            transform: 'rotate(0deg) translate(-165px) rotate(0deg)',
+          },
+          '100%': {
+            transform: 'rotate(360deg) translate(-165px) rotate(-360deg)',
+          },
         }
       }, // Add a comma here
     }, // Close extend object
