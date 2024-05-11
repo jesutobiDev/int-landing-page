@@ -19,18 +19,17 @@ const Industries = () => {
 
   return (
     <div className='bg-[#D9E2FF] w-full h-auto p-7 lg:px-20 lg:py-10 flex flex-col lg:flex-row justify-between gap-20 relative'>
-            <div className='w-full h-full absolute bg-[#D9E2FF] opacity-15 inset-0'></div>
-      <video autoPlay loop muted className='absolute inset-0 w-full h-full object-cover'>
+      <video autoPlay loop muted className='absolute inset-0 w-full h-full object-cover mix-blend-overlay'>
         <source src="/industries-video.mp4" type="video/mp4" />
         Your browser does not support the video tag...
       </video>
-      <div className='flex flex-col gap-4 lg:w-[40%]'>
+      <div className='flex flex-col gap-4 lg:w-[40%] z-10'>
         <h1 className='text-3xl text-[#000000] mb-5 lg:mb-10'>Industries</h1>
         <p className='text-[#000000]'>As a versatile service provider, we cater to diverse industries, offering tailored solutions to meet specific needs. We ensure success across varied business landscapes with comprehensive and adaptable solutions.</p>
         <a href='#' className="bg-[#2D7EFF] w-fit py-3 px-6 rounded-full text-white">All Cases</a>
       </div>
       <div className='relative h-auto p-2 lg:w-[40%] flex flex-col items-center'>
-        <div className={`${industriesData[currentIndex].background} shadow-md w-[100%] p-8 rounded-lg flex flex-col justify-between gap-2 lg:absolute bottom-0 z-50 h-[240px]`}>
+        <div className={`${industriesData[currentIndex].background} shadow-md lg:min-w-[500px] p-8 rounded-lg flex flex-col justify-between gap-2 lg:absolute bottom-0 z-50 lg;min-h-[280px]`}>
           <div className="flex flex-col gap-2">
             <div className='flex gap-2'>
               <Image
@@ -69,7 +68,7 @@ const Industries = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[#E4EEFF] shadow-md w-[94%] p-8 rounded-lg flex flex-col justify-between gap-2 absolute bottom-2 z-40 h-[240px]">
+        <div className="bg-[#E4EEFF] shadow-md w-[94%] p-8 rounded-lg flex flex-col justify-between gap-2 absolute bottom-2 z-40 min-h-[280px]">
           <div className="flex flex-col gap-2">
             <div className='flex gap-2'>
               <Image
@@ -91,7 +90,7 @@ const Industries = () => {
             height={15}
           />
         </div>
-        <div className="bg-[#B8D2FD] shadow-md w-[90%] p-8 rounded-lg flex flex-col justify-between gap-2 absolute bottom-4 z-30 h-[240px]">
+        <div className="bg-[#B8D2FD] shadow-md w-[90%] p-8 rounded-lg flex flex-col justify-between gap-2 absolute bottom-4 z-30 min-h-[280px]">
           <div className="flex flex-col gap-2">
             <div className='flex gap-2'>
               <Image
@@ -113,7 +112,7 @@ const Industries = () => {
             height={15}
           />
         </div>
-        <div className="bg-[#7FB0FF] shadow-md w-[86%] p-8 rounded-lg flex flex-col justify-between gap-2 absolute bottom-6 z-20 h-[240px]">
+        <div className="bg-[#7FB0FF] shadow-md w-[86%] p-8 rounded-lg flex flex-col justify-between gap-2 absolute bottom-6 z-20 min-h-[280px]">
           <div className="flex flex-col gap-2">
             <div className='flex gap-2'>
               <Image
@@ -135,7 +134,7 @@ const Industries = () => {
             height={15}
           />
         </div>
-        <div className="bg-[#2D7EFF] shadow-md w-[82%] p-8 rounded-lg flex flex-col justify-between gap-2 absolute bottom-8 z-10 h-[240px]">
+        <div className="bg-[#2D7EFF] shadow-md w-[82%] p-8 rounded-lg flex flex-col justify-between gap-2 absolute bottom-8 z-10 min-h-[280px]">
           <div className="flex flex-col gap-2">
             <div className='flex gap-2'>
               <Image
@@ -157,7 +156,7 @@ const Industries = () => {
             height={15}
           />
         </div>
-        <div className="bg-[#0061FC] shadow-md w-[78%] p-8 rounded-lg flex flex-col justify-between gap-2 absolute bottom-10 z-0 h-[240px]">
+        <div className="bg-[#0061FC] shadow-md w-[78%] p-8 rounded-lg flex flex-col justify-between gap-2 absolute bottom-10 z-0 min-h-[280px]">
           <div className="flex flex-col gap-2">
             <div className='flex gap-2'>
               <Image
