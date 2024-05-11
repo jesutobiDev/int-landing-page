@@ -37,7 +37,7 @@ const Homepage = () => {
           height={15}
           onClick={toggleNavClicked}
         />
-        <div className={`lg:flex lg:items-center lg:w-auto  lg:static top-0  h-screen lg:h-auto transition-all duration-300 ease-in-out  bg-red-500 lg:bg-transparen w-[100%] p-7 lg:p-0  fixed  ease z-[9999] ${navClicked ? 'right-0' : 'right-[-100%]'}`}>
+        <div className={`lg:flex lg:items-center lg:w-auto  lg:static top-0  h-screen lg:h-auto transition-all duration-300 ease-in-out  bg-white lg:bg-transparent w-[100%] p-7 lg:p-0  fixed  ease z-[9999] ${navClicked ? 'right-0' : 'right-[-100%]'}`}>
         <Image
           className="lg:hidden ml-auto "
           src="/times icon.svg"

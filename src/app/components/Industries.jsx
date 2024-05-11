@@ -19,7 +19,8 @@ const Industries = () => {
 
   return (
     <div className='bg-[#D9E2FF] w-full h-auto p-7 lg:px-20 lg:py-10 flex flex-col lg:flex-row justify-between gap-20 relative'>
-            <video autoPlay loop muted className='absolute inset-0 w-full h-full object-cover'>
+            <div className='w-full h-full absolute bg-[#D9E2FF] opacity-15 inset-0'></div>
+      <video autoPlay loop muted className='absolute inset-0 w-full h-full object-cover'>
         <source src="/industries-video.mp4" type="video/mp4" />
         Your browser does not support the video tag...
       </video>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const ContactPromo = () => {
   return (
-    <div className='relative w-full h-auto bg-black bg-cover text-white p-7 lg:px-20 lg:py-20 flex flex-col lg:flex-row lg:items-center justify-start gap-20 lg:gap-[200px]'>
+    <div className='relative w-full h-auto  bg-cover text-white p-7 lg:px-20 lg:py-20 flex flex-col lg:flex-row lg:items-center justify-start gap-20 lg:gap-[200px]'>
             <video autoPlay loop muted className='absolute inset-0 w-full h-full object-cover'>
         <source src="/contactpromo-video.mp4" type="video/mp4" />
         Your browser does not support the video tag...
