@@ -20,7 +20,7 @@ const Homepage = () => {
 
   return (
     <div className='min-h-[600px] w-screen bg-homepageBackground bg-cover p-7 lg:px-20 lg:py-10 relative'>
-      <nav className='flex justify-between items-center mb-16'>
+      <nav className='flex justify-between items-center mb-16 '>
         <div className='flex gap-1 items-center'>
           <div
             className={`${calistoga.variable} font-calistoga bg-white w-auto flex py-[2px] px-3 rounded-[1px]`}
@@ -37,7 +37,7 @@ const Homepage = () => {
           height={15}
           onClick={toggleNavClicked}
         />
-        <div className={`lg:flex lg:items-center lg:w-auto fixed top-0 left-0  bg-white lg:bg-transparent w-screen p-7 transition-all duration-500 ease z-50 ${navClicked ? 'h-screen' : 'hidden h-0'}`}>
+        <div className={`lg:flex lg:items-center lg:w-auto  lg:static top-0 left-0  bg-white lg:bg-transparent w-screen p-7 transition-all  fixed duration-500 ease z-[9999999] ${navClicked ? 'h-screen' : 'hidden h-0'}`}>
         <Image
           className="lg:hidden ml-auto"
           src="/times icon.svg"
@@ -46,7 +46,7 @@ const Homepage = () => {
           height={15}
           onClick={toggleNavClicked}
         />
-          <ul className='font-normal text-2xl lg:text-lg flex flex-col lg:flex-row lg:justify-between lg:text-white gap-10 mt-10'>
+          <ul className='font-normal text-2xl lg:text-lg flex flex-col lg:flex-row lg:justify-between lg:text-white gap-10 mt-10 '>
             <li>
               <a href="#" className=''>Home</a>
             </li>
