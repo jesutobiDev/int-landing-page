@@ -1,22 +1,21 @@
 'use client'
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Image from 'next/image'
 import cards from '../deck-data'
 
 
+
 const Industries = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextCard = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
-  };
-
-  const prevCard = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length);
-  };
-
+    const goToPrevious = () => {
+      setCurrentIndex((prevIndex) => (prevIndex === 0 ? cards.length - 1 : prevIndex - 1));
+    };
+  
+    const goToNext = () => {
+      setCurrentIndex((prevIndex) => (prevIndex === cards.length - 1 ? 0 : prevIndex + 1));
+    };
+  
   return (
     <div className='bg-[#D9E2FF] w-full h-auto p-7 lg:px-20 lg:py-10 flex flex-col lg:flex-row justify-between gap-20 relative'>
       <video autoPlay loop muted className='absolute inset-0 w-full h-full object-cover mix-blend-overlay'>
@@ -30,64 +29,44 @@ const Industries = () => {
       </div>
 
       {/* Deck */}
-      <div className='relative h-auto p-2 lg:w-[40%] flex flex-col items-center'>
-        {cards.map(card => <div key={card.industry} className={`${card.background} shadow-md lg:min-w-[500px] p-8 rounded-2xl flex flex-col justify-between gap-4 lg:absolute bottom-0 z-50 lg;min-h-[280px]`}>
-          <div className='flex gap-4 items-center'>
+      <div className='relative h-auto p-2 lg:w-[45%]'>
+<div className={`${cards[currentIndex].background} shadow-md  p-8 rounded-2xl flex flex-col justify-between gap-4 bottom-0 z-50 `}>
+          <div className='flex gap-4 items-center mb-7'>
             <Image
               className="flex self-end"
-              src={card.icon}
+              src={cards[currentIndex].icon}
               alt=''
-              width={25}
-              height={15}
+              width={35}
+              height={35}
             />
-            <h1 className="font-semibold">{card.industry}</h1>
+            <h1 className="font-semibold text-2xl">{cards[currentIndex].industry}</h1>
           </div>
-          <p className="text-xs">{card.text}</p>
+          <p className="text-sm mb-7 leading-[20px]">{cards[currentIndex].text}</p>
 
           <div className='flex justify-between mt-3'>
-            <div>
+            <div onClick={goToPrevious}>
               <Image
-                className={`${currentIndex === 0 ? 'hidden' : 'flex'} rotate-180 cursor-pointer`}
-                // prev button
+                className={`rotate-180 cursor-pointer`}
                 src="/blackarrow.svg"
                 alt=''
                 width={25}
                 height={15}
-                onClick={prevCard}
               />
             </div>
-            <div>
+            <div onClick={goToNext}>
               <Image
-                className={`${currentIndex === 5 ? 'hidden' : 'flex'} cursor-pointer`}
-                // next button
+                className={`cursor-pointer`}
                 src="/blackarrow.svg"
                 alt=''
                 width={25}
                 height={15}
-                onClick={nextCard}
               />
             </div>
           </div>
-        </div>)}
-
+        </div>
       </div>
-
-
-
-
-
-
-
     </div>
   )
 }
 
 export default Industries
-
-
-
-
-
-
-
-
