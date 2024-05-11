@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "homepageBackground": "url('/homepage-background.svg')",
-        "solutionsBackground": "url('/solutions.svg')",
+        "milestonesBackground": "url('/milestone.svg')",
         "contactpromoBackground": "url('/contactpromo.svg')",
         "industriesBackground": "url('/industries.svg')",
         "Background404": "url('/404.svg')",

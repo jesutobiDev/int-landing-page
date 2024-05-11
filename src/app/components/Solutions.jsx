@@ -9,8 +9,8 @@ const Solutions = () => {
         Your browser does not support the video tag...
       </video>
       <div className="lg:w-1/3 z-10 tracking-wider text-xl">Build your custom solutions with us. Dedicated to your goals and success.</div>
-      <a href='#' className='z-10 group flex gap-10 items-center justify-between px-4 py-4 rounded-full bg-opacity-20 bg-white backdrop-filter backdrop-blur-lg border border-opacity-10 border-white border-solid shadow-md text-white w-[70px] h-[70px] overflow-hidden hover:w-[500px]  transition-all duration-300 ease-in-out'>
-
+      <a href='#' className='z-10 group flex flex-row gap-10 items-center justify-between px-4 py-4 rounded-full bg-opacity-20 bg-white backdrop-filter backdrop-blur-lg border border-opacity-10 border-white border-solid shadow-md text-white w-[70px] h-[70px] overflow-hidden hover:w-[500px]  transition-all duration-300 ease-in-out'>
+        <span className="hidden group-hover:flex transition-all duration-300 ease-in-out leading-[70px]">Tell us about your project</span>
         <div className='w-[70px] h-[70px] flex items-center justify-center'>
           <Image
             src="/arrow.svg"
@@ -21,7 +21,7 @@ const Solutions = () => {
           />
         </div>
 
-        <span className="hidden group-hover:flex transition-all duration-300 ease-in-out leading-[70px]">Tell us about your project</span>
+
 
       </a>
     </div>
