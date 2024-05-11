@@ -29,28 +29,41 @@ const Homepage = () => {
           </div>
           <p className='text-white text-lg'>Technology</p>
         </div>
-        <ul className='items-center gap-6 text-white hidden lg:flex'>
-          <li className='text-lg'>
-            <a href='#about'>About Us</a>
-          </li>
-          <li className='text-lg'>
-            <a href='#expertise'>Expertise</a>
-          </li>
-          <li className='text-lg'>
-            <a href='#services'>Services</a>
-          </li>
-          <li className='text-lg'>
-            <a href='#contact'>Contact</a>
-          </li>
-        </ul>
         <Image
-          className="lg:hidden"
+          className={`lg:hidden ${navClicked ? 'hidden' : ''}`}
           src="/nav icon.svg"
           alt=''
           width={25}
           height={15}
           onClick={toggleNavClicked}
         />
+        <div className={`lg:flex lg:items-center lg:w-auto fixed top-0 left-0  bg-white lg:bg-transparent w-screen p-7 transition-all duration-500 ease z-50 ${navClicked ? 'h-screen' : 'hidden h-0'}`}>
+        <Image
+          className="lg:hidden ml-auto"
+          src="/times icon.svg"
+          alt=''
+          width={25}
+          height={15}
+          onClick={toggleNavClicked}
+        />
+          <ul className='font-normal text-2xl lg:text-lg flex flex-col lg:flex-row lg:justify-between lg:text-white gap-10 mt-10'>
+            <li>
+              <a href="#" className=''>Home</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Technologies</a>
+            </li>
+            <li>
+              <a href="#">Career</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <div className='w-full h-auto flex flex-col gap-10'>
         <h1 className='text-white text-4xl lg:text-6xl font-medium w-[40%] tracking-wider lg:leading-[70px]'>Implementing Software Solutions</h1>
@@ -71,39 +84,9 @@ const Homepage = () => {
             width={25}
             height={15}
           />
-          {/* <div class="absolute -inset-0.5 bg-white rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 "></div> */}
         </a>
       </div>
 
-      <div className={`${navClicked ? 'hidden' : ''} bg-white h-screen absolute top-0 right-0 w-screen hidden lg:hidden`}>
-        <div className='flex w-full justify-end mb-20 pt-7 pr-7'>
-          <Image
-            className="lg:hidden"
-            src="/times icon.svg"
-            alt=''
-            width={30}
-            height={30}
-            onClick={toggleNavClicked}
-          />
-        </div>
-        <div className='flex flex-col gap-10 pl-7'>
-          <div>
-            <p>Home</p>
-          </div>
-          <div>
-            <p>Services</p>
-          </div>
-          <div>
-            <p>Technology</p>
-          </div>
-          <div>
-            <p>Careers</p>
-          </div>
-          <div>
-            <p>Blog</p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
