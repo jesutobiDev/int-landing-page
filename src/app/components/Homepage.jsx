@@ -9,9 +9,13 @@ const calistoga = Calistoga({
   variable: '--font-calistoga',
 });
 
-const Homepage = ({navClicked, toggleNavClicked}) => {
+const Homepage = () => {
 
+  const [navClicked, setNavClicked] = useState(false);
 
+  const toggleNavClicked = () => {
+    setNavClicked(!navClicked);
+  };
 
 
   return (
@@ -33,18 +37,18 @@ const Homepage = ({navClicked, toggleNavClicked}) => {
           height={15}
           onClick={toggleNavClicked}
         />
-        <div className={`lg:flex lg:items-center lg:w-auto  lg:static top-0   bg-white lg:bg-transparent w-screen h-screen p-7 transition-all  fixed overflow-hidden duration-500 ease z-[9999] ${navClicked ? 'h-screen left-0' : 'hidden left-[-100%]'}`}>
+        <div className={`lg:flex lg:items-center lg:w-auto  lg:static top-0  h-screen lg:h-auto transition-all duration-300 ease-in-out  bg-red-500 lg:bg-transparen w-[100%] p-7 lg:p-0  fixed  ease z-[9999] ${navClicked ? 'right-0' : 'right-[-100%]'}`}>
         <Image
-          className="lg:hidden ml-auto"
+          className="lg:hidden ml-auto "
           src="/times icon.svg"
           alt=''
           width={25}
           height={15}
           onClick={toggleNavClicked}
         />
-          <ul className='font-normal text-2xl lg:text-lg flex flex-col lg:flex-row lg:justify-between lg:text-white gap-10 mt-10 '>
+          <ul className='font-normal text-2xl lg:text-lg flex flex-col lg:flex-row lg:items-center lg:justify-between lg:text-white gap-10 mt-10 lg:mt-0'>
             <li>
-              <a href="#" className=''>Home</a>
+              <a href="#">Home</a>
             </li>
             <li>
               <a href="#">Services</a>
