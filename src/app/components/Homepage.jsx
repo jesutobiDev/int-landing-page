@@ -9,17 +9,13 @@ const calistoga = Calistoga({
   variable: '--font-calistoga',
 });
 
-const Homepage = () => {
+const Homepage = ({navClicked, toggleNavClicked}) => {
 
-  const [navClicked, setNavClicked] = useState(false);
 
-  const toggleNavClicked = () => {
-    setNavClicked(!navClicked);
-  };
 
 
   return (
-    <div className='min-h-[600px] w-screen bg-homepageBackground bg-cover p-7 lg:px-20 lg:py-10 relative'>
+    <div className='min-h-[600px] w-screen bg-homepageBackground bg-cover p-7 lg:px-20 lg:py-10 '>
       <nav className='flex justify-between items-center mb-16 '>
         <div className='flex gap-1 items-center'>
           <div
@@ -37,7 +33,7 @@ const Homepage = () => {
           height={15}
           onClick={toggleNavClicked}
         />
-        <div className={`lg:flex lg:items-center lg:w-auto  lg:static top-0 left-0  bg-white lg:bg-transparent w-screen p-7 transition-all  fixed duration-500 ease z-[9999999] ${navClicked ? 'h-screen' : 'hidden h-0'}`}>
+        <div className={`lg:flex lg:items-center lg:w-auto  lg:static top-0   bg-white lg:bg-transparent w-screen h-screen p-7 transition-all  fixed overflow-hidden duration-500 ease z-[9999] ${navClicked ? 'h-screen left-0' : 'hidden left-[-100%]'}`}>
         <Image
           className="lg:hidden ml-auto"
           src="/times icon.svg"
