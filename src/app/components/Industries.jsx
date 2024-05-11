@@ -31,7 +31,7 @@ const Industries = () => {
 
       {/* Deck */}
       <div className='relative h-auto p-2 lg:w-[40%] flex flex-col items-center'>
-        {cards.map(card => <div key={card.industry} className={`${card.background} shadow-md lg:min-w-[500px] p-8 rounded-2xl flex flex-col justify-between gap-4 lg:absolute bottom-0 z-50 lg;min-h-[280px]`}>
+        {cards.map(card => <div key={card.industry} className={`${card.background} shadow-md lg:min-w-[500px] p-8 rounded-2xl  justify-between gap-4 absolute top-0 left-0 bottom-0 z-50 lg;min-h-[280px]`}>
           <div className='flex gap-4 items-center'>
             <Image
               className="flex self-end"
@@ -42,7 +42,7 @@ const Industries = () => {
             />
             <h1 className="font-semibold">{card.industry}</h1>
           </div>
-          <p className="text-xs">{card.text}</p>
+          <p className="text-sm leading-[20px]">{card.text}</p>
 
           <div className='flex justify-between mt-3'>
             <div>
