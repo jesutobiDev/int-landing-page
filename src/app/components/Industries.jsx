@@ -18,7 +18,11 @@ const Industries = () => {
   };
 
   return (
-    <div className='bg-[#D9E2FF] w-full h-auto p-7 lg:px-20 lg:py-10 flex flex-col lg:flex-row justify-between gap-20'>
+    <div className='bg-[#D9E2FF] w-full h-auto p-7 lg:px-20 lg:py-10 flex flex-col lg:flex-row justify-between gap-20 relative'>
+            <video autoPlay loop muted className='absolute inset-0 w-full h-full object-cover'>
+        <source src="/industries-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag...
+      </video>
       <div className='flex flex-col gap-4 lg:w-[40%]'>
         <h1 className='text-3xl text-[#000000] mb-5 lg:mb-10'>Industries</h1>
         <p className='text-[#000000]'>As a versatile service provider, we cater to diverse industries, offering tailored solutions to meet specific needs. We ensure success across varied business landscapes with comprehensive and adaptable solutions.</p>
