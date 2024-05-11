@@ -17,7 +17,7 @@ const Industries = () => {
     };
   
   return (
-    <div className='bg-[#D9E2FF] w-full h-auto p-7 lg:px-20 lg:py-10 flex flex-col lg:flex-row justify-between gap-20 relative'>
+    <div className='bg-[#D9E2FF] w-full h-[604px] lg:h-[612px] p-7 lg:px-20 lg:py-10 flex flex-col lg:flex-row justify-between gap-20 relative'>
       <video autoPlay loop muted className='absolute inset-0 w-full h-full object-cover mix-blend-overlay'>
         <source src="/industries-video.mp4" type="video/mp4" />
         Your browser does not support the video tag...
@@ -29,9 +29,9 @@ const Industries = () => {
       </div>
 
       {/* Deck */}
-      <div className='relative h-auto p-2 lg:w-[45%]'>
+      <div className='relative h-auto p-2 lg:w-[45%] transition-all duration-300 ease-in-out'>
 <div className={`${cards[currentIndex].background} shadow-md  p-8 rounded-2xl flex flex-col justify-between gap-4 bottom-0 z-50 `}>
-          <div className='flex gap-4 items-center mb-7'>
+          <div className='flex gap-4 items-base mb-7'>
             <Image
               className="flex self-end"
               src={cards[currentIndex].icon}
