@@ -9,7 +9,7 @@ const calistoga = Calistoga({
 
 const Footer = () => {
   return (
-    <div className='bg-white w-full h-auto p-7 lg:px-20 lg:py-10'>
+    <div className='bg-white w-full h-auto px-7 py-12 lg:p-20 '>
       <div className='flex justify-between flex-col-reverse gap-7 lg:flex-row'>
         <div className='flex flex-col justify-between'>
           <div>
