@@ -65,19 +65,19 @@ const Homepage = () => {
           </ul>
         </div>
       </nav>
-      <div className='w-full h-auto flex flex-col gap-8 lg:items-center lg:text-center lg:pt-20'>
+      <div className='w-full h-auto flex flex-col gap-10 lg:gap-4 lg:items-center lg:text-center lg:pt-20'>
         <h1 className='text-white text-4xl lg:text-6xl font-medium w-[60%] tracking-wider lg:leading-[70px]'>Implementing Software Solutions</h1>
         <div className='flex flex-col gap-4'>
           <p className="text-white text-lg font-light tracking-wider">Innovating Tomorrow{'\''}s Solutions, Today.</p>
-          <div className="flex gap-2 items-center">
+          <div className="flex gap-2 items-center lg:justify-center">
             <div className={`${calistoga.variable} font-calistoga bg-white w-auto flex py-[2px] px-3 rounded-[1px]`}>
               <p className='text-xl font-medium text-[#1E1E1E]'>int<sup className='text-base'>+</sup></p>
             </div>
             <p className='text-white text-lg font-light tracking-wide'>– Your Trusted IT Partner</p>
           </div>
         </div>
-        <a href='#contact' className='flex w-fit px-4 py-2 rounded-full bg-opacity-5 bg-white backdrop-filter backdrop-blur-lg hover:border-white transition-all duration-500 ease-in-out border-solid shadow-md text-white gap-4 outline-none group glowing-border'>
-          <p className='text-lg font-light'>Get Started</p>
+        <a href='#contact' className='flex items-center justify-center px-4 py-2 rounded-full bg-opacity-5 bg-white backdrop-filter backdrop-blur-lg hover:border-white lg:hover:w-[200px] transition-all duration-500 ease-in-out border-solid shadow-md text-white gap-4 outline-none group glowing-border group w-fit  lg:h-20 lg:w-20'>
+          <p className='text-lg font-light lg:hidden lg:group-hover:flex transition-all duration-1000 ease-in-out  button-text'>Get Started</p>
           <Image
             src="/arrow.svg"
             alt=''
