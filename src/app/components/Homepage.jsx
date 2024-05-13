@@ -49,7 +49,7 @@ const Homepage = () => {
         />
           <ul className='font-normal text-2xl lg:text-lg flex flex-col lg:flex-row lg:items-center lg:justify-between lg:text-white gap-10 mt-10 lg:mt-0'>
             <li>
-              <Link href="/about">Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li>
               <Link href="/services">Services</Link>
