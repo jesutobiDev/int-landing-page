@@ -3,7 +3,7 @@ import React from 'react'
 const Milestones = () => {
   return (
     <div className='w-full h-auto px-7 py-12 lg:p-20  flex flex-col gap-6 relative bg-transparent leading-[23px]' >
-      <div className="bg-milestonesBackground absolute top-1/2 left-0  bg-no-repeat -z-10 m-auto w-full  h-full flex self-center opacity-10 bg-contain"></div>
+      <div className="bg-milestonesBackground absolute top-1/2 left-0  bg-no-repeat -z-10 m-auto w-full h-[100px] opacity-10 bg-contain "></div>
       <h1  className='text-4xl text-[#000000] mb-3 lg:w-[30%]'>Milestones</h1>
       <div className='h-[2px] bg-[#00000040] w-full mb-3'></div>
       <p className='lg:w-1/2'>Explore int+ journey, defined by transformative milestones, showcasing our unwavering commitment to excellence and innovation.</p>
