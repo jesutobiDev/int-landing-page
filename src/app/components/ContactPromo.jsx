@@ -9,7 +9,7 @@ const ContactPromo = () => {
         Your browser does not support the video tag...
       </video>
       <div className="lg:w-1/3 tracking-wider text-xl z-10 font-normal leading-[38px]">Secure the future of your company with  <span className='font-bold'>int+</span></div>
-      <a href='#' className=' group flex  items-center justify-between px-4 py-4 rounded-full bg-opacity-20 bg-white backdrop-filter backdrop-blur-lg border border-opacity-10 border-white border-solid shadow-md w-fit lg:w-20 h-20 overflow-hidden  lg:hover:lw-[400px]  transition-all duration-500 ease-in-out z-10'>
+      <a href='#' className=' group flex  items-center justify-between px-4 py-4 rounded-full bg-opacity-20 bg-white backdrop-filter backdrop-blur-lg border border-opacity-10 border-white border-solid shadow-md w-fit lg:w-20 h-20 overflow-hidden  lg:hover:w-[400px]  transition-all duration-500 ease-in-out z-10'>
       <span className=" transition-all duration-500 ease-in-out lg:hidden lg:group-hover:inline leading-[70px] w-auto flex-1 text-transparent  opacity-0 group-hover:opacity-100 text-white button-text">Get in touch</span>
         <div className='w-20 h-20 flex items-center justify-center transition-all duration-300 ease-in-out '>
           <Image

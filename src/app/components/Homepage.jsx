@@ -76,8 +76,8 @@ const Homepage = () => {
             <p className='text-white text-lg font-light tracking-wide'>– Your Trusted IT Partner</p>
           </div>
         </div>
-        <a href='#contact' className='flex items-center justify-center px-4 py-2 rounded-full bg-opacity-5 bg-white backdrop-filter backdrop-blur-lg hover:border-white lg:hover:w-[200px] transition-all duration-500 ease-in-out border-solid shadow-md text-white gap-4 outline-none group glowing-border group w-fit  lg:h-20 lg:w-20'>
-          <p className='text-lg font-light lg:hidden lg:group-hover:flex transition-all duration-1000 ease-in-out  button-text'>Get Started</p>
+        <a href='#contact' className='flex items-center justify-center gap-10 px-4 py-2 rounded-full bg-opacity-5 bg-white backdrop-filter backdrop-blur-lg hover:border-white lg:hover:w-[300px] transition-all duration-500 ease-in-out border-solid shadow-md text-white outline-none group glowing-border group w-fit  lg:h-20 lg:w-20'>
+          <p className='text-lg font-light lg:hidden lg:group-hover:inline transition-all duration-500 delay-500 ease-in-out  button-text'>Let{"'"}s get started</p>
           <Image
             src="/arrow.svg"
             alt=''
