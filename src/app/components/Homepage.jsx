@@ -76,7 +76,7 @@ const Homepage = () => {
             <p className='text-white text-lg font-light tracking-wide'>– Your Trusted IT Partner</p>
           </div>
         </div>
-        <a href='#contact' className='flex w-fit px-4 py-2 rounded-full bg-opacity-5 bg-white backdrop-filter backdrop-blur-lg border border-opacity-10 border-white border-solid shadow-md text-white gap-4 outline-none group relative'>
+        <a href='#contact' className='flex w-fit px-4 py-2 rounded-full bg-opacity-5 bg-white backdrop-filter backdrop-blur-lg hover:border-white transition-all duration-500 ease-in-out border-solid shadow-md text-white gap-4 outline-none group glowing-border'>
           <p className='text-lg font-light'>Get Started</p>
           <Image
             src="/arrow.svg"
@@ -85,6 +85,7 @@ const Homepage = () => {
             height={15}
           />
         </a>
+        
       </div>
 
     </div>
