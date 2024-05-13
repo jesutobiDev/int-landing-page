@@ -10,7 +10,7 @@ const Solutions = () => {
       </video>
       <div className="lg:w-1/3 z-10 tracking-wider text-xl">Build your custom solutions with us. Dedicated to your goals and success.</div>
       <a href='#' className=' group flex gap-10 items-center justify-between px-4 py-4 rounded-full bg-opacity-20 bg-white backdrop-filter backdrop-blur-lg border border-opacity-10 border-white border-solid shadow-md w-[70px] h-[70px] overflow-hidden hover:w-full hover:lg:w-[400px]  transition-all duration-500 ease-in-out z-10 relative'>
-      <span className=" transition-all duration-500 ease-in-out hidden group-hover:inline leading-[70px] w-auto flex-1 text-transparent hover:text-white">Tell us about your project</span>
+      <span className=" transition-all duration-500 ease-in-out hidden group-hover:inline leading-[70px] w-auto flex-1 text-transparent  opacity-0 group-hover:opacity-100 text-white ">Tell us about your project</span>
         <div className='w-[70px] h-[70px] flex items-center justify-center'>
           <Image
             src="/arrow.svg"
