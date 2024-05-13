@@ -30,8 +30,8 @@ const Industries = () => {
 
       {/* Deck */}
       <div className='relative h-auto p-2 lg:w-[45%] transition-all duration-300 ease-in-out leading-[25px]'>
-<div className={`${cards[currentIndex].background} shadow-md  p-8 rounded-2xl flex flex-col justify-between gap-4 bottom-0 z-50 `}>
-          <div className='flex gap-4 items-base mb-7'>
+<div className={`${cards[currentIndex].background} shadow-md  p-8 rounded-2xl flex flex-col justify-between gap-2 bottom-0 z-50 `}>
+          <div className='flex gap-4 items-base mb-5'>
             <Image
               className="flex self-end"
               src={cards[currentIndex].icon}
@@ -43,7 +43,7 @@ const Industries = () => {
           </div>
           <p className="text-sm mb-7 leading-[20px]">{cards[currentIndex].text}</p>
 
-          <div className='flex justify-between mt-3'>
+          <div className='flex justify-between mt-2'>
             <div onClick={goToPrevious}>
               <Image
                 className={`rotate-180 cursor-pointer`}
