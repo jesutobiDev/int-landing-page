@@ -19,7 +19,7 @@ const Homepage = () => {
 
 
   return (
-    <div className='min-h-[600px] w-screen bg-homepageBackground bg-cover p-7 lg:px-20 lg:py-10 '>
+    <div className='min-h-[600px] w-screen bg-homepageBackground bg-cover p-7 lg:px-20 lg:py-10'>
       <nav className='flex justify-between items-center mb-16 '>
         <div className='flex gap-1 items-center'>
           <div
@@ -65,8 +65,8 @@ const Homepage = () => {
           </ul>
         </div>
       </nav>
-      <div className='w-full h-auto flex flex-col gap-10'>
-        <h1 className='text-white text-4xl lg:text-6xl font-medium w-[40%] tracking-wider lg:leading-[70px]'>Implementing Software Solutions</h1>
+      <div className='w-full h-auto flex flex-col gap-8 lg:items-center lg:text-center lg:pt-20'>
+        <h1 className='text-white text-4xl lg:text-6xl font-medium w-[60%] tracking-wider lg:leading-[70px]'>Implementing Software Solutions</h1>
         <div className='flex flex-col gap-4'>
           <p className="text-white text-lg font-light tracking-wider">Innovating Tomorrow{'\''}s Solutions, Today.</p>
           <div className="flex gap-2 items-center">
