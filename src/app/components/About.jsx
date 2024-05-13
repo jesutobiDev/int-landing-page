@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
       <div className='flex justify-between gap-10 h-auto w-full flex-col lg:flex-row'>
         <div className='h-auto flex flex-col justify-between lg:w-[30%] gap-7'>
           <p>We have the motivated experts you need to solve any problem. Our commitment to understanding your needs builds strong, trusting relationships – it{"'"}s why we guarantee satisfaction with every solution. </p>
-          <a href='#' className="bg-[#2D7EFF] w-fit py-4 px-5 rounded-full text-white">More about us</a>
+          <Link href='/about' className="bg-[#2D7EFF] w-fit py-4 px-5 rounded-full text-white">More about us</Link>
         </div>
         <div className="h-auto flex flex-col justify-between gap-7 lg:w-[70%]">
           <div className='flex justify-between w-full flex-col lg:flex-row gap-5'>

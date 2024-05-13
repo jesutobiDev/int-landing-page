@@ -1,5 +1,6 @@
 import React from 'react'
 import { Calistoga } from "next/font/google";
+import Link from 'next/link'
 
 const calistoga = Calistoga({
   subsets: ["latin"],
@@ -15,11 +16,19 @@ const Footer = () => {
           <div>
             <p className={`${calistoga.variable} font-calistoga text-2xl font-medium text-[#1E1E1E] hidden lg:flex`}>int<sup className='text-base'>+</sup></p>
           </div>
-          <ul className='flex items-center gap-6 text-black font-light flex-wrap'>
-            <li className='text-base'>Services</li>
-            <li className='text-base'>About Us</li>
-            <li className='text-base'>Career</li>
-            <li className='text-base'>Contact</li>
+          <ul className='flex items-center gap-6 text-black font-light flex-wrap text-base'>
+            <li>
+              <Link href="/services">Services</Link>
+            </li>
+            <li>
+              <Link href="/technologies">About</Link>
+            </li>
+            <li>
+              <Link href="/career">Career</Link>
+            </li>
+            <li>
+              <Link href="/blog">Contact</Link>
+            </li>
           </ul>
         </div>
         <div className="flex flex-col gap-7">

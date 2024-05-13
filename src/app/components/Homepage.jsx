@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { Calistoga } from 'next/font/google';
+import Link from 'next/link'
 
 const calistoga = Calistoga({
   subsets: ['latin'],
@@ -48,19 +49,19 @@ const Homepage = () => {
         />
           <ul className='font-normal text-2xl lg:text-lg flex flex-col lg:flex-row lg:items-center lg:justify-between lg:text-white gap-10 mt-10 lg:mt-0'>
             <li>
-              <a href="#">Home</a>
+              <Link href="/about">Home</Link>
             </li>
             <li>
-              <a href="#">Services</a>
+              <Link href="/services">Services</Link>
             </li>
             <li>
-              <a href="#">Technologies</a>
+              <Link href="/technologies">Technologies</Link>
             </li>
             <li>
-              <a href="#">Career</a>
+              <Link href="/career">Career</Link>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <Link href="/blog">Blog</Link>
             </li>
           </ul>
         </div>
