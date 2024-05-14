@@ -4,10 +4,7 @@ import 'swiper/css';
 import 'swiper/css/bundle';
 import Image from 'next/image';
 import cards from '../deck-data';
-import {
-    EffectCards,
-    Pagination, Navigation
-} from 'swiper';
+import {EffectCards, Autoplay} from 'swiper';
 import 'swiper/css/effect-cards';
 
 const Slider = () => {
@@ -18,6 +15,7 @@ const Slider = () => {
             centeredSlides={true}
             loop={true}
             speed={500}
+            autoplay={{ delay: 3500 }}
             rotate={true}
             cardsEffect={{
                 perSlideOffset: 8,
@@ -25,15 +23,7 @@ const Slider = () => {
                 rotate: true,
 
             }}
-            pagination={{ el: '.swiper-pagination', clickable: true }}
-            navigation={{
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-                clickable: true,
-            }}
-            modules={[EffectCards,
-                 Pagination, Navigation
-            ]}
+            modules={[EffectCards, Autoplay]}
             className="mySwiper"
         >
             {cards.map((card, index) => (
@@ -48,26 +38,6 @@ const Slider = () => {
                         <p className="font-semibold text-2xl">{card.industry}</p>
                     </div>
                     <p className='font-normal text-base leading-[25px] my-4'>{card.text}</p>
-                    {/* <div className="slider-controler">
-                        <div className="swiper-button-prev slider-arrow">
-                            <Image
-                                src="/blackarrow.svg"
-                                alt="prev arrow"
-                                width={25}
-                                height={15}
-                            />
-                        </div>
-                        <div className="swiper-button-next slider-arrow">
-                            <Image
-                                src="/blackarrow.svg"
-                                alt="next arrow"
-                                width={25}
-                                height={15}
-                                className='rotate-180'
-                            />
-                        </div>
-                        <div className="swiper-pagination"></div>
-                    </div> */}
                 </SwiperSlide>
             ))}
         </Swiper>
