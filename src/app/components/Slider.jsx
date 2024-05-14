@@ -15,12 +15,13 @@ const Slider = () => {
             centeredSlides={true}
             loop={true}
             speed={500}
-            autoplay={{ delay: 3500 }}
+            autoplay={{ delay: 10000,
+                 disableOnInteraction: false, 
+                }}
             rotate={true}
             cardsEffect={{
                 perSlideOffset: 8,
-                perSlideRotate: 2,
-                rotate: true,
+                perSlideRotate: 3,
 
             }}
             modules={[EffectCards, Autoplay]}
