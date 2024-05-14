@@ -21,7 +21,7 @@ const Slider = () => {
             rotate={true}
             cardsEffect={{
                 perSlideOffset: 8,
-                perSlideRotate: 3,
+                perSlideRotate: 2,
 
             }}
             modules={[EffectCards, Autoplay]}
