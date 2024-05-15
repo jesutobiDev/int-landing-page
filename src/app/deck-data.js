@@ -2,7 +2,7 @@ const industriesData = [
     {
         icon : '/ico tech.svg',
         industry: 'FinTech',
-        text : 'Accelerate innovation using the power of <span className="font-bold"> Int+</span> software development for banking and financial services. Advance your efficiency, customer experience, and business performance with our future-proof solutions',
+        text : 'Accelerate innovation using the power of <span class="font-bold"> Int+</span> software development for banking and financial services. Advance your efficiency, customer experience, and business performance with our future-proof solutions',
         background : 'bg-[#F8FBFF]',
     },
     {
@@ -14,7 +14,7 @@ const industriesData = [
     {
         icon : '/ico ship.svg',
         industry: 'Logistics and Shipping',
-        text : 'Logistics Software solutions with the latest tech give you an edge over competition across the board, to track your operations and predict malfunction. get valuable insights into your operations.',
+        text : 'Logistics Software solutions with the latest tech give you an edge over competition across the board, to track your operations and predict malfunction. Get valuable insights into your operations.',
         background : 'bg-[#B8D2FD]',
     },
     {
